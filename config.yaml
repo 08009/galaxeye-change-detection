@@ -1,0 +1,23 @@
+batch_size: 8
+encoder: resnet34
+encoder_weights: imagenet
+epochs: 20
+image_size: 256
+learning_rate: 0.0001
+loss: dice_bce
+num_workers: 2
+optimizer: adamw
+paths:
+  checkpoint_dir: /content/drive/MyDrive/galaxeye_project/checkpoints
+  test_post: /content/galaxeye_dataset/test/test/post-event
+  test_pre: /content/galaxeye_dataset/test/test/pre-event
+  test_target: /content/galaxeye_dataset/test/test/target
+  train_post: /content/galaxeye_dataset/train/post-event
+  train_pre: /content/galaxeye_dataset/train/pre-event
+  train_target: /content/galaxeye_dataset/train/target
+  val_post: /content/galaxeye_dataset/val/val/post-event
+  val_pre: /content/galaxeye_dataset/val/val/pre-event
+  val_target: /content/galaxeye_dataset/val/val/target
+pos_weight: 8.9
+seed: 42
+weight_decay: 0.0001
